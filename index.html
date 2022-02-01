@@ -28,18 +28,22 @@
         display: grid;
         grid-template-rows: auto 1fr auto;
         width: 600px;
+        background-color: rgb(140, 112, 93);
+        opacity: 90%;
+        border-radius: 10px;
     }
     .logo {
             width: 300px;
             margin-bottom: 48px;
             justify-self: center;
             display: flex;          
-            border-radius: 50%; 
+            border-radius: 50%;
     }
     .title {
         font-size: 60px;
         margin-block: 20px;
         text-align: center;
+        color: black;
     }
     .title:hover {
         color: navy;
@@ -48,13 +52,24 @@
         font-size: 20px;
         margin-block: 20px;
         text-align: center;
+        color: black;
+    }
+    .form-container p {
+        color: black;
+    } 
+    .p {
+        font-size: 18px;
+        text-align: center;
+        color: black;
+        padding: 10%;
     }
     .list {
         font-size: 20px;
         text-align: center;
         font-weight: bold;
         list-style: none;
-    }
+        color: black;
+    }   
     .list li:nth-child(1):hover,
     .list li:nth-child(2):hover {
         color: orangered;
@@ -68,12 +83,14 @@
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 4px;
+        color: black;
+        padding: 10%;
     }
     .button {
-        background-color: rgb(243, 194, 177);
+        background-color: rgb(175, 140, 129);
         border-radius: 8px;
-        border: 3px solid red;
-        color: red;
+        border: 3px solid chocolate;
+        color: chocolate;
         width: 50%;
         cursor: pointer;
         font-size: 30px;
@@ -94,21 +111,32 @@
     @media (max-width: 640px) {
         .form-container {
             height: 100%;
+            width: 90%;
         }
         .form {
             height: 100%;
             justify-content: space-between;
         }
+        .precio {
+            width: 80%;
+            margin-bottom: 20px;
+            margin-block: 20px;
+            justify-self: center;
+            display: inline;     
+            border-radius: 5%; 
+            align-content: center;
+    }
     }
     </style>
 </head>
 <body>
+    <body background="./pentagrama1.jpeg"></body>
     <div class="login">
         <div class="form-container">
             <img src="./logo.jpeg" alt="Logo" class="logo">
             <h1 class="title">MOZART BUFFET</h1>
             <h2 class="subtitle">Auto cálculo del presupuesto en sus diferentes opciones de menús</h2>
-            <p>
+            <p class="p">
                 El precio del presupuesto es estimativo, para confirmar el mismo debe comunicarse con: 
                 <ul class="list">
                     <li>Rodrigo: 099 791 164</li>
